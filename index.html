@@ -97,7 +97,7 @@
                     </li>
                 </ul>
             </nav>
-            <ul id="lnb">
+            <ul class="lnb_right">
                 <li><a href="#"><img src="./images/store.svg" alt="매장찾기"></a></li>
                 <li><a href="#"><img src="./images/cart.svg" alt="장바구니"></a></li>
                 <li><a href="#"><img src="./images/my_page.svg" alt="나의정보"></a></li>
@@ -113,11 +113,17 @@
             </div>
             <!-- section -->
             <section id="hero_bnr">
-                <div id="slide_wrap"><!-- 뷰포트 영역 1920(full) * 845 -->
-                    <div id="slide_container"><!-- 5760 * 845 -->
+                <div class="slide_wrap"><!-- 뷰포트 영역 1920(full) * 845 -->
+                    <div class="slide_container"><!-- 5760 * 845 -->
                         <div class="slide"></div>
-                        <div class="slide"></div>
-                        <div class="slide"></div>
+                        <div class="slide">
+                            <p>SEALY MOTIONFLEX</p>
+                            <h1>143년 기술력의 집합체<br>연결형 스프링 모션 매트리스<br>모션플렉스 출시</h1>
+                        </div>
+                        <div class="slide">
+                            <p>EXQUISITE H SERIES</p>
+                            <h1>기술력의 정점<br>Exquisite H 출시</h1>
+                        </div>
                     </div>
                     <!-- section 1 고정 대상들 -->
                     <div id="hero_bnr_fnb">
@@ -127,72 +133,128 @@
                             <span class="slide_bar"></span>
                         </div>
                         <div class="number_box"><!-- 배너/총배너 표시 -->
-                            <button type="button"><img src="./images/prev_btn.png" alt="이전배너보기"></button>
+                            <button type="button" class="prev_btn"><img src="./images/prev_btn.png" alt="이전배너보기"></button>
                             <div class="total_number">
                                 <span class="current">1</span>
                                 <span class="slash">/</span>
                                 <span class="total">3</span>
                             </div>
-                            <button type="button"><img src="./images/next_btn.png" alt="다음배너보기"></button>
+                            <button type="button" class="next_btn"><img src="./images/next_btn.png" alt="다음배너보기"></button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="movie">
+            <section id="main_movie">
                 <h1>Life ON Sealy</h1>
                 <iframe src="#" frameborder="0"></iframe>
-                <p class="bg_text">Life ON Sealy</p>
                 <p>포스처피딕은 1950년, 씰리침대와 성형외과 의사들과 협업해 개발했습니다.</p>
                 <p>포스처피딕 코일 시스템은 혁신적인 연구 개발을 통해</p>
                 <p>전 세계 소비자의 건강한 수면 환경에 이바지하고 있습니다.</p>
             </section>
-            <section id="about_sealy">
+            <section id="main_about_sealy">
                 <div class="title_number_box">
                     <p class="title_number">01</p>
                     <span class="line"></span>
                     <h1>About sealy</h1>
                 </div>
-                <div class="contents_wrap">
-                    <div class="text_box">
-                        <div class="title_big">
-                            <h2>Coil<span>Technology</span></h2>
-                            <p>씰리 코일 시스템은 뒤척임을 유발하는 압동점을 완화하여<br>신체 굴곡에 최적의 수면 자세를 제공합니다.</p>
+                <div class="about_wrap"><!-- viewport -->
+                    <div class="about_container"><!-- full -->
+                        <div class="about_content">
+                            <div class=title_big>
+                                <h1>Coil<span>Technology</span></h1>
+                                <p>씰리 코일 시스템은 뒤척임을 유발하는 압동점을 완화하여<br>신체 굴곡에 최적의 수면 자세를 제공합니다.</p>
+                            </div>
+                            <img src="./images/about1.webp" alt="coil_technology">
                         </div>
-                        <ul class="title_small">
-                            <li><a href="#">Coil Technology</a></li>
-                            <li><a href="#">Edge Support</a></li>
-                            <li><a href="#">Comfort Layer</a></li>
-                            <li><a href="#">Other Features</a></li>
-                        </ul>
+                        <div class="about_content">
+                            <div class=title_big>
+                                <h1>Edge<span>Support</span></h1>
+                                <p>씰리 엣지 서포트 시스템은 매트리스의 가장자리가 처지는 것을 방지하여<br>넓고 안정적인 수면 공간을 완성해 줍니다.</p>
+                            </div>
+                            <img src="./images/about2.webp" alt="coil_technology">
+                        </div>
+                        <div class="about_content">
+                            <div class=title_big>
+                                <h1>Comfort<span>Layer</span></h1>
+                                <p>충전재는 침대의 느낌(단단함, 부드러움)을<br>결정짓는 중요한 요소들 중 하나입니다.</p>
+                            </div>
+                            <img src="./images/about3.webp" alt="coil_technology">
+                        </div>
+                        <div class="about_content">
+                            <div class=title_big>
+                                <h1>Other<span>Features</span></h1>
+                                <p>씰리침대는 오랜 연구를 통해 특허를 받은 기술력과 장인정신이 깃든<br>깐깐한 공정을 바탕으로 프리미엄 제품 생산을 위해 끊임없이 노력합니다.</p>
+                            </div>
+                            <img src="./images/about4.webp" alt="coil_technology">
+                        </div>
                     </div>
-                    <img src="./images/about1.webp" alt="coil_technology">
+                    <ul class="title_small"><!-- 고정 타이틀 -->
+                        <li>
+                            <a href="#">
+                                <h1>Coil Technology</h1>
+                                <img src="#" alt="더보기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h1>Edge Support</h1>
+                                <img src="#" alt="더보기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h1>Comfort Layer</h1>
+                                <img src="#" alt="더보기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h1>Other Features</h1>
+                                <img src="#" alt="더보기">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section id="collection">
+            <section id="main_collection">
                 <div class="title_number_box">
                     <p class="title_number">02</p>
                     <span class="line"></span>
                     <h1>Collection</h1>
                 </div>
                 <ul class="collection_box">
-                    <li><p>Haynes</p></li>
-                    <li><p>Crown Jewel</p></li>
-                    <li><p>Exquisite</p></li>
-                    <li><p>Posturepedic</p></li>
-                    <li><p>Sealy Premier</p></li>
+                    <li><p class="haynes">Haynes</p></li>
+                    <li><p class="crown_jewel"> Crown Jewel</p></li>
+                    <li><p class="exquisite">Exquisite</p></li>
+                    <li><p class="posturepedic">Posturepedic</p></li>
+                    <li><p class="sealy_premier">Sealy Premier</p></li>
                 </ul>
             </section>
-            <section id="event">
-                <div class="event_bnr_wrap">
-                    <div class="event_bnr_1">
-                        <a href="#" class="view_more">View More</a>
+            <section id="main_main_event">
+                <div class="event_bnr">
+                    <h1>EVENT</h1>
+                    <h2>신규 회원가입 혜택</h2>
+                    <p>중복 사용 가능한 웰컴 쿠폰 10% 지급해드립니다.</p>
+                    <div class="view_more_box">
+                        <a href="#">
+                            <p>View More</p>
+                            <img src="#" alt="더보기">
+                        </a>
                     </div>
-                    <div class="event_bnr_2">
-                        <a href="#" class="view_more">View More</a>
+                </div>
+                <div class="event_bnr">
+                    <h1>EVENT</h1>
+                    <h2>리뷰 작성 이벤트</h2>
+                    <p>커피 기프티콘을 지급해드립니다.</p>
+                    <div class="view_more_box">
+                        <a href="#">
+                            <p>View More</p>
+                            <img src="#" alt="더보기">
+                        </a>
                     </div>
                 </div>
             </section>
-            <section id="shop">
+            <section id="main_shop">
                 <div class="title_number_box">
                     <p class="title_number">03</p>
                     <span class="line"></span>
@@ -249,7 +311,7 @@
                     </div>
                 </div>
             </section>
-            <section id="community">
+            <section id="main_community">
                 <div class="title_number_box">
                     <p class="title_number">03</p>
                     <span class="line"></span>
@@ -282,7 +344,7 @@
                     </ul>
                 </div>
             </section>
-            <section id="support">
+            <section id="main_support">
                 <h1>씰리에게 궁금하신 부분은 바로 확인해보세요</h1>
                 <ul class="support_list">
                     <li>
@@ -317,54 +379,43 @@
             </section>
         </main>
         <footer>
-            <div id="footer_top">
-                <p><img src="./images/logo2.svg" alt="씰리코리아"></p>
-                <div class="info_box">
-                    <p>씰리코리아 컴퍼니(유)</p>
-                    <div class="left_box">
-                        <dl>
-                            <dt>대표자</dt>
-                            <dd>용종효, 조지 A 다이어</dd>
-                            <dt>주소</dt>
-                            <dd><address>서울특별시 강남구 삼성로 633(삼성동) 삼광빌딩 3층</address></dd>
-                            <dt>사업자등록번호</dt>
-                            <dd>114-86-39564</dd>
-                        </dl>
-                    </div>
-                    <div class="right_box">
-                        <dl>
-                            <dt>개인정보관리책임자</dt>
-                            <dd>소병준</dd>
-                            <dt>통신판매업 신고번호</dt>
-                            <dd>제 2014-서울강남-01573호</dd>
-                        </dl>
-                    </div>
-                    <ul id="fnb">
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">개인정보 처리방침</a></li>
-                        <li><a href="#">Sealy Whistleblower Policy</a></li>
-                        <li><a href="#">1:1 문의</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="service">
-                    <div class="service_center">
-                        <dl>
-                            <dt>고객센터</dt>
-                            <dd>1670-2151</dd>
-                            <dd>1670-2151</dd>
-                            <dd>월-금 Am 10:00 ~ PM 04:00</dd>
-                            <dd>(주말 및 공휴일 휴무,<br>1:1 문의게시판을 이용해주세요.)</dd>
-                        </dl>
-                    </div>
-                    <div class="sns">
-                        <a href="#"><img src="./images/sns_facebook.webp" alt="페이스북"></a>
-                        <a href="#"><img src="./images/sns_insta.webp" alt="인스타그램"></a>
-                        <a href="#"><img src="./images/sns_naver.webp" alt="네이버"></a>
-                    </div>
+            <p><img src="./images/logo2.svg" alt="씰리코리아"></p>
+            <div class="info_box">
+                <p>씰리코리아 컴퍼니(유)</p>
+                <dl>
+                    <dt>대표자</dt>
+                    <dd>용종효, 조지 A 다이어</dd>
+                    <dt>주소</dt>
+                    <dd><address>서울특별시 강남구 삼성로 633(삼성동) 삼광빌딩 3층</address></dd>
+                    <dt>사업자등록번호</dt>
+                    <dd>114-86-39564</dd>
+                    <dt>개인정보관리책임자</dt>
+                    <dd>소병준</dd>
+                    <dt>통신판매업 신고번호</dt>
+                    <dd>제 2014-서울강남-01573호</dd>
+                </dl>
+                <ul id="fnb">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">Sealy Whistleblower Policy</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="service">
+                <dl>
+                    <dt>고객센터</dt>
+                    <dd>1670-2151</dd>
+                    <dd>1670-2151</dd>
+                    <dd>월-금 Am 10:00 ~ PM 04:00</dd>
+                    <dd>(주말 및 공휴일 휴무,<br>1:1 문의게시판을 이용해주세요.)</dd>
+                </dl>
+                <div class="sns">
+                    <a href="#"><img src="./images/sns_facebook.webp" alt="페이스북"></a>
+                    <a href="#"><img src="./images/sns_insta.webp" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/sns_naver.webp" alt="네이버"></a>
                 </div>
             </div>
-            <p id="footer_btm">Your Life On Sealy</p>
         </footer>
     </div>
 </body>
