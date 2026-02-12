@@ -230,28 +230,18 @@
                     <li><p class="sealy_premier">Sealy Premier</p></li>
                 </ul>
             </section>
-            <section id="main_main_event">
+            <section id="main_event">
                 <div class="event_bnr">
                     <h1>EVENT</h1>
                     <h2>신규 회원가입 혜택</h2>
                     <p>중복 사용 가능한 웰컴 쿠폰 10% 지급해드립니다.</p>
-                    <div class="view_more_box">
-                        <a href="#">
-                            <p>View More</p>
-                            <img src="#" alt="더보기">
-                        </a>
-                    </div>
+                    <a href="#">View More<img src="#" alt="더보기"></a>
                 </div>
                 <div class="event_bnr">
                     <h1>EVENT</h1>
                     <h2>리뷰 작성 이벤트</h2>
                     <p>커피 기프티콘을 지급해드립니다.</p>
-                    <div class="view_more_box">
-                        <a href="#">
-                            <p>View More</p>
-                            <img src="#" alt="더보기">
-                        </a>
-                    </div>
+                    <a href="#">View More<img src="#" alt="더보기"></a>
                 </div>
             </section>
             <section id="main_shop">
@@ -262,54 +252,66 @@
                 </div>
                 <div class="products_title">
                     <h2>Sealy's <span>Products</span></h2>
-                    <a href="#" class="view_more">View More</a>
+                    <a href="#">View More<img src="#" alt="더보기"></a>
                 </div>
-                <div class="products_box">
-                    <div class="product">
-                        <a href="#"><img src="./images/verus.png" alt="베루스"></a>
-                        <h3>Verus(베루스) Q</h3>
+                <ul class="products_box">
+                    <li class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/verus.png" alt="베루스"></a>
+                            <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                        </div>
+                        <a href=""><h3>Verus(베루스) Q</h3></a>
                         <p>사이즈:SS / Q / KI / CK / RK</p>
                         <p>쿠션감:Med(미디엄)</p>
                         <div class="price_box">
                             <p class="price">2,024,000원</p>
                             <p class="discount">42%</p>
                         </div>
-                        <p class="review">리뷰 2</p>
-                    </div>
-                    <div class="product">
-                        <a href="#"><img src="./images/granita.jpg" alt="그라니타"></a>
-                        <h3>Granita(그라니타)</h3>
+                        <a href="#" class="review">리뷰 2</a>
+                    </li>
+                    <li class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/granita.jpg" alt="그라니타"></a>
+                            <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                        </div>
+                        <a href=""><h3>Granita(그라니타)</h3></a>
                         <p>사이즈:SS / Q / KI / CK</p>
                         <p>컬러:라이트브라운, 아이보리</p>
                         <div class="price_box">
                             <p class="price">2,232,000원</p>
                             <p class="discount">20%</p>
                         </div>
-                        <!-- <p class="review">리뷰 2</p> -->
-                    </div>
-                    <div class="product">
-                        <a href="#"><img src="./images/edgar_plush.jpg" alt="에드가2플러쉬"></a>
-                        <h3>Edgar 2 Ⅱ Plush(에드가 2 플러쉬) Q</h3>
+                        <a href="#" class="review">리뷰 2</a>
+                    </li>
+                    <li class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/edgar_plush.jpg" alt="에드가2플러쉬"></a>
+                            <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                        </div>
+                        <a href=""><h3>Edgar 2 Ⅱ Plush(에드가 2 플러쉬) Q</h3></a>
                         <p>사이즈:SS / Q / KI / CK / RK</p>
                         <p>쿠션감:Plush(소프트)</p>
                         <div class="price_box">
                             <p class="price">1,792,000원</p>
                             <p class="discount">42%</p>
                         </div>
-                        <p class="review">리뷰 2</p>
-                    </div>
-                    <div class="product">
-                        <a href="#"><img src="./images/bride_firm.jpg" alt="브라이드펌"></a>
-                        <h3>Bride Firm(브라이드 펌) Q</h3>
+                        <a href="#" class="review">리뷰 2</a>
+                    </li>
+                    <li class="product">
+                        <div class="product_img">
+                            <a href="#"><img src="./images/bride_firm.jpg" alt="브라이드펌"></a>
+                            <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                        </div>
+                        <a href=""><h3>Bride Firm(브라이드 펌) Q</h3></a>
                         <p>사이즈:SS / Q / KI / CK</p>
                         <p>쿠션감:Firm(하드)</p>
                         <div class="price_box">
                             <p class="price">1,423,000원</p>
                             <p class="discount">35%</p>
                         </div>
-                        <p class="review">리뷰 4</p>
-                    </div>
-                </div>
+                        <a href="#" class="review">리뷰 4</a>
+                    </li>
+                </ul>
             </section>
             <section id="main_community">
                 <div class="title_number_box">
@@ -352,6 +354,7 @@
                             <img src="./images/support_icon1.svg" alt="">
                             <h2>씰리코리아 매장찾기</h2>
                             <p>전국에 있는 씰리 매장을 찾아보세요.</p>
+                            <img src="#" alt="더보기">
                         </a>
                     </li>
                     <li>
@@ -359,6 +362,7 @@
                             <img src="./images/support_icon2.svg" alt="">
                             <h2>A/S 접수를 하고 싶어요</h2>
                             <p>씰리 제품의 A/S 접수를 더 빠르고 정확하게 신청해보세요.</p>
+                            <img src="#" alt="더보기">
                         </a>
                     </li>
                     <li>
@@ -366,6 +370,7 @@
                             <img src="./images/support_icon3.svg" alt="">
                             <h2>자주 묻는 질문 모음 FAQ</h2>
                             <p>다양한 글로벌 씰리의 궁금한 점을 해결해보세요.</p>
+                            <img src="#" alt="더보기">
                         </a>
                     </li>
                     <li>
@@ -373,6 +378,7 @@
                             <img src="./images/support_icon4.svg" alt="">
                             <h2>정품인증을 어떻게 하나요?</h2>
                             <p>씰리 제품의 정품인증을 간단하고 더 편리하게 해보세요.</p>
+                            <img src="#" alt="더보기">
                         </a>
                     </li>
                 </ul>
@@ -401,6 +407,7 @@
                     <li><a href="#">1:1 문의</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
+                <p class="copyright">Copyright &copy; Sealy Korea Company All Rights Reserverd</p>
             </div>
             <div class="service">
                 <dl>
