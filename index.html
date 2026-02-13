@@ -99,7 +99,10 @@
             </nav>
             <ul class="lnb_right">
                 <li><a href="#"><img src="./images/store.svg" alt="매장찾기"></a></li>
-                <li><a href="#"><img src="./images/cart.svg" alt="장바구니"></a></li>
+                <li>
+                    <a href="#"><img src="./images/cart.svg" alt="장바구니"></a>
+                    <span>0</span>
+                </li>
                 <li><a href="#"><img src="./images/my_page.svg" alt="나의정보"></a></li>
                 <li><a href="#"><img src="./images/search.svg" alt="검색"></a></li>
             </ul>
@@ -107,7 +110,7 @@
                 <form class="search_form" action="#" method="get"><!-- 검색 영역 -->
                     <input type="search" name="search_keyword" id="search_keyword">
                     <button type="submit" class="search_btn">
-                        <img src="./images/search_popup.webp" alt="검색">
+                        <img src="./images/search_popup.png" alt="검색">
                     </button>
                 </form>
                 <div class="popular_keywords"><!-- 인기검색어 -->
@@ -168,7 +171,7 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="search_popup_close"><img src="./images/search_close.webp" alt="검색창닫기"></button>
+                <button type="button" class="search_popup_close"><img src="./images/search_close.png" alt="검색창닫기"></button>
             </div>
         </header>
         <main>
@@ -193,23 +196,21 @@
                         <div class="slide slide3"></div>
                     </div>
                     <!-- section 1 고정 대상들 -->
-                    <div class="hero_nav"><!-- 이전, 다음배너 이동 버튼 -->
-                        <button type="button" class="hero_prev"><img src="./images/prev_btn.png" alt="이전배너보기"></button>
-                        <button type="button" class="hero_next"><img src="./images/next_btn.png" alt="다음배너보기"></button>
-                    </div>
+                        <button type="button" class="prev"><img src="./images/prev_btn.png" alt="이전배너보기"></button>
+                        <button type="button" class="next"><img src="./images/next_btn.png" alt="다음배너보기"></button>
                     <div class="hero_controls"><!-- 배너 슬라이드 바 -->
                         <div class="hero_progress">
                             <span class="hero_progress_bar"></span>
                         </div>
                         <div class="pagination">
-                            <button type="button" class="pagination_prev">
+                            <button type="button" class="prev">
                                 <img src="./images/prev_btn.png" alt="이전배너보기">
                             </button>
                             <div class="page_number">
                                 <span class="current">1</span>
                                 <span class="total">/3</span>
                             </div>
-                            <button type="button" class="pagination_next">
+                            <button type="button" class="next">
                                 <img src="./images/next_btn.png" alt="다음배너보기">
                             </button>
                         </div>
@@ -238,7 +239,7 @@
                                 <p>씰리 코일 시스템은 뒤척임을 유발하는 압동점을 완화하여<br>신체 굴곡에 최적의 수면 자세를 제공합니다.</p>
                             </div>
                             <div class="about_img">
-                                <img src="./images/about1.webp" alt="coil_technology">
+                                <img src="./images/about1.jpg" alt="coil_technology">
                             </div>
                         </div>
                         <div class="about_content">
@@ -247,7 +248,7 @@
                                 <p>씰리 엣지 서포트 시스템은 매트리스의 가장자리가 처지는 것을 방지하여<br>넓고 안정적인 수면 공간을 완성해 줍니다.</p>
                             </div>
                             <div class="about_img">
-                                <img src="./images/about2.webp" alt="edge_support">
+                                <img src="./images/about2.jpg" alt="edge_support">
                             </div>
                         </div>
                         <div class="about_content">
@@ -256,7 +257,7 @@
                                 <p>충전재는 침대의 느낌(단단함, 부드러움)을<br>결정짓는 중요한 요소들 중 하나입니다.</p>
                             </div>
                             <div class="about_img">
-                                <img src="./images/about3.webp" alt="comfort_layer">
+                                <img src="./images/about3.jpg" alt="comfort_layer">
                             </div>
                         </div>
                         <div class="about_content">
@@ -265,7 +266,7 @@
                                 <p>씰리침대는 오랜 연구를 통해 특허를 받은 기술력과 장인정신이 깃든<br>깐깐한 공정을 바탕으로 프리미엄 제품 생산을 위해 끊임없이 노력합니다.</p>
                             </div>
                             <div class="about_img">
-                                <img src="./images/about4.webp" alt="other_features">
+                                <img src="./images/about4.jpg" alt="other_features">
                             </div>
                         </div>
                     </div>
@@ -306,35 +307,35 @@
                     <li>
                         <p class="collecion">Haynes</p>
                         <div class="collecion_popup">
-                            <img src="./images/collecion_popup1.webp" alt="Haynes">
+                            <img src="./images/collecion_popup1.png" alt="Haynes">
                             <a href="#">View More<img src="./images/btn_more.svg" alt="더보기"></a>
                         </div>
                     </li>
                     <li>
                         <p class="collecion">Crown Jewel</p>
                         <div class="collecion_popup">
-                            <img src="./images/collecion_popup2.webp" alt="Crown Jewel">
+                            <img src="./images/collecion_popup2.png" alt="Crown Jewel">
                             <a href="#">View More<img src="./images/btn_more.svg" alt="더보기"></a>
                         </div>
                     </li>
                     <li>
                         <p class="collecion">Exquisite</p>
                         <div class="collecion_popup">
-                            <img src="./images/collecion_popup3.webp" alt="Exquisite">
+                            <img src="./images/collecion_popup3.png" alt="Exquisite">
                             <a href="#">View More<img src="./images/btn_more.svg" alt="더보기"></a>
                         </div>
                     </li>
                     <li>
                         <p class="collecion">Posturepedic</p>
                         <div class="collecion_popup">
-                            <img src="./images/collecion_popup4.webp" alt="Posturepedic">
+                            <img src="./images/collecion_popup4.png" alt="Posturepedic">
                             <a href="#">View More<img src="./images/btn_more.svg" alt="더보기"></a>
                         </div>
                     </li>
                     <li>
                         <p class="collecion">Sealy Premier</p>
                         <div class="collecion_popup">
-                            <img src="./images/collecion_popup5.webp" alt="Sealy Premier">
+                            <img src="./images/collecion_popup5.png" alt="Sealy Premier">
                             <a href="#">View More<img src="./images/btn_more.svg" alt="더보기"></a>
                         </div>
                     </li>
@@ -432,21 +433,21 @@
                     <ul class="community_list">
                         <li>
                             <a href="#">
-                                <img src="./images/community_icon1.webp" alt="">
+                                <img src="./images/community_icon1.png" alt="">
                                 <h3>With Hotels</h3>
                                 <p>전세계적으로 사랑받은<br>씰리 침대를 확인해보세요</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/community_icon2.webp" alt="">
+                                <img src="./images/community_icon2.png" alt="">
                                 <h3>Event</h3>
                                 <p>씰리에서 진행중인<br>이벤트를 확인해보세요</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/community_icon3.webp" alt="">
+                                <img src="./images/community_icon3.png" alt="">
                                 <h3>Review</h3>
                                 <p>씰리 고객님의<br>다양한 리뷰를 공유합니다 </p>
                             </a>
@@ -502,7 +503,10 @@
                     <dt>주소</dt>
                     <dd><address>서울특별시 강남구 삼성로 633(삼성동) 삼광빌딩 3층</address></dd>
                     <dt>사업자등록번호</dt>
-                    <dd>114-86-39564</dd>
+                    <dd class="biz_info">
+                        114-86-39564
+                        <a href="#" class="biz_link">사업자정보확인</a>
+                    </dd>
                     <dt>개인정보관리책임자</dt>
                     <dd>소병준</dd>
                     <dt>통신판매업 신고번호</dt>
@@ -526,9 +530,9 @@
                     <dd>(주말 및 공휴일 휴무,<br>1:1 문의게시판을 이용해주세요.)</dd>
                 </dl>
                 <div class="sns">
-                    <a href="#"><img src="./images/sns_facebook.webp" alt="페이스북"></a>
-                    <a href="#"><img src="./images/sns_insta.webp" alt="인스타그램"></a>
-                    <a href="#"><img src="./images/sns_naver.webp" alt="네이버"></a>
+                    <a href="#"><img src="./images/sns_facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/sns_insta.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/sns_naver.png" alt="네이버"></a>
                 </div>
             </div>
         </footer>
