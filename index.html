@@ -103,6 +103,75 @@
                 <li><a href="#"><img src="./images/my_page.svg" alt="나의정보"></a></li>
                 <li><button type="button"><img src="./images/search.svg" alt="검색"></button></li>
             </ul>
+            <div class="search_popup"><!-- 검색창 팝업 -->
+                <div class="search_box"><!-- 검색 영역 -->
+                    <form class="search_form">
+                        <input type="search">
+                        <button type="submit" class="search_btn">
+                            <img src="#" alt="검색">
+                        </button>
+                    </form>
+                </div>
+                <div class="popular_keywords"><!-- 인기검색어 -->
+                    <h2 class="search_title">인기검색어</h2>
+                    <ul>
+                        <li><a href="#">크라운주얼</a></li>
+                        <li><a href="#">엑스퀴짓</a></li>
+                        <li><a href="#">모션플렉스</a></li>
+                        <li><a href="#">베루스</a></li>
+                    </ul>
+                </div>
+                <div class="recomment_section"><!-- 추천상품 -->
+                    <h2>이런 제품은 어떠세요?</h2>
+                    <ul class="recommend_list">
+                        <li class="recommend_item">
+                            <div class="recommend_thumnail">
+                                <a href="#"><img src="#" alt="솜니움"></a>
+                                <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                            </div>
+                            <h2><a href="#">Somnium (솜니움) 매트리스</a></h2>
+                            <p>사이즈: SS / Q / KI / CK</p>
+                            <p>쿠션감: Medium</p>
+                            <p class="product_badge">오프라인</p>
+                        </li>
+                        <li class="recommend_item">
+                            <div class="recommend_thumnail">
+                                <a href="#"><img src="#" alt="엑스퀴짓하이랜드"></a>
+                                <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                            </div>
+                            <h2><a href="#">Exquisite HighLand (엑스퀴짓 하이랜드) 매트리스</a></h2>
+                            <p>사이즈: SS / Q / KI / CK</p>
+                            <p>쿠션감: Ultra Firm / Plush</p>
+                            <p class="product_badge">오프라인</p>
+                        </li>
+                        <li class="recommend_item">
+                            <div class="recommend_thumnail">
+                                <a href="#"><img src="#" alt="엑스퀴짓헤븐리시더"></a>
+                                <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                            </div>
+                            <h2><a href="#">Exquisite Heavenly Cedar (엑스퀴짓 헤븐리시더) 매트리스</a></h2>
+                            <p>사이즈: SS / Q / KI / CK</p>
+                            <p>쿠션감: Firm / Ultra Plush</p>
+                            <p class="product_badge">오프라인</p>
+                        </li>
+                        <li class="recommend_item">
+                            <div class="recommend_thumnail">
+                                <a href="#"><img src="#" alt="베루스"></a>
+                                <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
+                            </div>
+                            <h2><a href="#">Verus(베루스) Q</a></h2>
+                            <p>사이즈: SS / Q / KI / CK / RK</p>
+                            <p>쿠션감: Med (미디엄)</p>
+                            <div class="price_box">
+                                <p class="price">2,024,000원</p>
+                                <p class="discount">42%</p>
+                            </div>
+                            <a href="#" class="review">리뷰 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="search_popup_close"><img src="#" alt="검색창닫기"></button>
+            </div>
         </header>
         <main>
             <!-- main 빠른 고정 메뉴 -->
@@ -115,12 +184,11 @@
             <section id="hero_bnr">
                 <div class="slide_wrap"><!-- 뷰포트 영역 1920(full) * 845 -->
                     <div class="slide_container"><!-- 5760 * 845 -->
-                        <div class="slide"></div>
-                        <div class="slide">
+                        <div class="slide slide1">
                             <p>SEALY MOTIONFLEX</p>
                             <h1>143년 기술력의 집합체<br>연결형 스프링 모션 매트리스<br>모션플렉스 출시</h1>
                         </div>
-                        <div class="slide">
+                        <div class="slide slide2">
                             <p>EXQUISITE H SERIES</p>
                             <h1>기술력의 정점<br>Exquisite H 출시</h1>
                         </div>
@@ -160,29 +228,29 @@
                 <div class="about_wrap"><!-- viewport -->
                     <div class="about_container"><!-- full -->
                         <div class="about_content">
-                            <div class=title_big>
-                                <h1>Coil<span>Technology</span></h1>
+                            <div class="title_big">
+                                <h2>Coil<span>Technology</span></h2>
                                 <p>씰리 코일 시스템은 뒤척임을 유발하는 압동점을 완화하여<br>신체 굴곡에 최적의 수면 자세를 제공합니다.</p>
                             </div>
                             <img src="./images/about1.webp" alt="coil_technology">
                         </div>
                         <div class="about_content">
-                            <div class=title_big>
-                                <h1>Edge<span>Support</span></h1>
+                            <div class="title_big">
+                                <h2>Edge<span>Support</span></h2>
                                 <p>씰리 엣지 서포트 시스템은 매트리스의 가장자리가 처지는 것을 방지하여<br>넓고 안정적인 수면 공간을 완성해 줍니다.</p>
                             </div>
                             <img src="./images/about2.webp" alt="coil_technology">
                         </div>
                         <div class="about_content">
-                            <div class=title_big>
-                                <h1>Comfort<span>Layer</span></h1>
+                            <div class="title_big">
+                                <h2>Comfort<span>Layer</span></h2>
                                 <p>충전재는 침대의 느낌(단단함, 부드러움)을<br>결정짓는 중요한 요소들 중 하나입니다.</p>
                             </div>
                             <img src="./images/about3.webp" alt="coil_technology">
                         </div>
                         <div class="about_content">
-                            <div class=title_big>
-                                <h1>Other<span>Features</span></h1>
+                            <div class="title_big">
+                                <h2>Other<span>Features</span></h2>
                                 <p>씰리침대는 오랜 연구를 통해 특허를 받은 기술력과 장인정신이 깃든<br>깐깐한 공정을 바탕으로 프리미엄 제품 생산을 위해 끊임없이 노력합니다.</p>
                             </div>
                             <img src="./images/about4.webp" alt="coil_technology">
@@ -191,25 +259,25 @@
                     <ul class="title_small"><!-- 고정 타이틀 -->
                         <li>
                             <a href="#">
-                                <h1>Coil Technology</h1>
+                                <h2>Coil Technology</h2>
                                 <img src="#" alt="더보기">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <h1>Edge Support</h1>
+                                <h2>Edge Support</h2>
                                 <img src="#" alt="더보기">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <h1>Comfort Layer</h1>
+                                <h2>Comfort Layer</h2>
                                 <img src="#" alt="더보기">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <h1>Other Features</h1>
+                                <h2>Other Features</h2>
                                 <img src="#" alt="더보기">
                             </a>
                         </li>
@@ -223,21 +291,51 @@
                     <h1>Collection</h1>
                 </div>
                 <ul class="collection_box">
-                    <li><p class="haynes">Haynes</p></li>
-                    <li><p class="crown_jewel"> Crown Jewel</p></li>
-                    <li><p class="exquisite">Exquisite</p></li>
-                    <li><p class="posturepedic">Posturepedic</p></li>
-                    <li><p class="sealy_premier">Sealy Premier</p></li>
+                    <li>
+                        <p class="collecion">Haynes</p>
+                        <div class="collecion_popup">
+                            <img src="#" alt="Haynes">
+                            <a href="#">View More<img src="#" alt="더보기"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="collecion">Crown Jewel</p>
+                        <div class="collecion_popup">
+                            <img src="#" alt="Crown Jewel">
+                            <a href="#">View More<img src="#" alt="더보기"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="collecion">Exquisite</p>
+                        <div class="collecion_popup">
+                            <img src="#" alt="Exquisite">
+                            <a href="#">View More<img src="#" alt="더보기"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="collecion">Posturepedic</p>
+                        <div class="collecion_popup">
+                            <img src="#" alt="Posturepedic">
+                            <a href="#">View More<img src="#" alt="더보기"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="collecion">Sealy Premier</p>
+                        <div class="collecion_popup">
+                            <img src="#" alt="Sealy Premier">
+                            <a href="#">View More<img src="#" alt="더보기"></a>
+                        </div>
+                    </li>
                 </ul>
             </section>
             <section id="main_event">
-                <div class="event_bnr">
+                <div class="event_bnr event1">
                     <h1>EVENT</h1>
                     <h2>신규 회원가입 혜택</h2>
                     <p>중복 사용 가능한 웰컴 쿠폰 10% 지급해드립니다.</p>
                     <a href="#">View More<img src="#" alt="더보기"></a>
                 </div>
-                <div class="event_bnr">
+                <div class="event_bnr event2">
                     <h1>EVENT</h1>
                     <h2>리뷰 작성 이벤트</h2>
                     <p>커피 기프티콘을 지급해드립니다.</p>
@@ -260,7 +358,7 @@
                             <a href="#"><img src="./images/verus.png" alt="베루스"></a>
                             <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
                         </div>
-                        <a href=""><h3>Verus(베루스) Q</h3></a>
+                        <h3><a href="#">Verus(베루스) Q</a></h3>
                         <p>사이즈:SS / Q / KI / CK / RK</p>
                         <p>쿠션감:Med(미디엄)</p>
                         <div class="price_box">
@@ -274,7 +372,7 @@
                             <a href="#"><img src="./images/granita.jpg" alt="그라니타"></a>
                             <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
                         </div>
-                        <a href=""><h3>Granita(그라니타)</h3></a>
+                        <h3><a href="#">Granita(그라니타)</a></h3>
                         <p>사이즈:SS / Q / KI / CK</p>
                         <p>컬러:라이트브라운, 아이보리</p>
                         <div class="price_box">
@@ -288,7 +386,7 @@
                             <a href="#"><img src="./images/edgar_plush.jpg" alt="에드가2플러쉬"></a>
                             <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
                         </div>
-                        <a href=""><h3>Edgar 2 Ⅱ Plush(에드가 2 플러쉬) Q</h3></a>
+                        <h3><a href="#">Edgar 2 Ⅱ Plush(에드가 2 플러쉬) Q</a></h3>
                         <p>사이즈:SS / Q / KI / CK / RK</p>
                         <p>쿠션감:Plush(소프트)</p>
                         <div class="price_box">
@@ -302,7 +400,7 @@
                             <a href="#"><img src="./images/bride_firm.jpg" alt="브라이드펌"></a>
                             <button class="wish_btn" type="button"><img src="#" alt="관심상품등록"></button>
                         </div>
-                        <a href=""><h3>Bride Firm(브라이드 펌) Q</h3></a>
+                        <h3><a href="#">Bride Firm(브라이드 펌) Q</a></h3>
                         <p>사이즈:SS / Q / KI / CK</p>
                         <p>쿠션감:Firm(하드)</p>
                         <div class="price_box">
