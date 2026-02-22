@@ -1,1 +1,201 @@
 body {background-color: lightgray;}
+#wrap {}
+/* -----------------------------------------------header */
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav #gnb {}
+#wrap header nav #gnb li {}
+#wrap header nav #gnb li a {}
+#wrap header nav #gnb li .lnb_depth2 {}
+#wrap header nav #gnb li .lnb_depth2 li {}
+#wrap header nav #gnb li .lnb_depth2 li a {}
+#wrap header nav #gnb li .lnb_depth2 li .depth_title {}
+#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 {}
+#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 li {}
+#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 li a {}
+#wrap header .lnb_right {}
+#wrap header .lnb_right li {}
+#wrap header .lnb_right li a {}
+#wrap header .lnb_right li a img {}
+#wrap header .lnb_right li span {}
+#wrap header .search_popup {}
+#wrap header .search_popup .search_form {}
+#wrap header .search_popup .search_form #search_keyword {}
+#wrap header .search_popup .search_form .search_btn {}
+#wrap header .search_popup .search_form .search_btn img {}
+#wrap header .search_popup .popular_keywords {}
+#wrap header .search_popup .popular_keywords .search_title {}
+#wrap header .search_popup .popular_keywords ul {}
+#wrap header .search_popup .popular_keywords ul li {}
+#wrap header .search_popup .popular_keywords ul li a {}
+#wrap header .search_popup .reco_section {}
+#wrap header .search_popup .reco_section h2 {}
+#wrap header .search_popup .reco_section .reco_list {}
+#wrap header .search_popup .reco_section .reco_list .reco_item {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a img {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn img {}
+#wrap header .search_popup .reco_section .reco_list .reco_item h2 {}
+#wrap header .search_popup .reco_section .reco_list .reco_item h2 a {}
+#wrap header .search_popup .reco_section .reco_list .reco_item p {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_size {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_cusion {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_badge {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box span {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box em {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .review {}
+#wrap header .search_popup .search_popup_close {}
+#wrap header .search_popup .search_popup_close img {}
+/* -----------------------------------------------main */
+#wrap main {}
+#wrap main #right_quick {}
+#wrap main #right_quick .btn_map {}
+#wrap main #right_quick .btn_map img {}
+#wrap main #right_quick .btn_kakao {}
+#wrap main #right_quick .btn_kakao img {}
+#wrap main #right_quick .btn_to_go {}
+#wrap main #right_quick .btn_to_go img {}
+#wrap main #hero_bnr {}
+#wrap main #hero_bnr .slide_wrap {}
+#wrap main #hero_bnr .slide_wrap .slide_container {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide p {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide h1 {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide1 {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide2 {}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide3 {}
+#wrap main #hero_bnr .slide_wrap .prev {}
+#wrap main #hero_bnr .slide_wrap .prev img {}
+#wrap main #hero_bnr .slide_wrap .next {}
+#wrap main #hero_bnr .slide_wrap .next img {}
+#wrap main #hero_bnr .slide_wrap .hero_controls {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress .hero_progress_bar {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev img {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number .current {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number .total {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next img {}
+#wrap main #main_video {}
+#wrap main #main_video h1 {}
+#wrap main #main_video iframe {}
+#wrap main #main_video .video_desc_box {}
+#wrap main #main_video .video_desc_box p {}
+#wrap main #main_about_sealy {}
+#wrap main #main_about_sealy .title_number_box {}
+#wrap main #main_about_sealy .title_number_box .title_number {}
+#wrap main #main_about_sealy .title_number_box h1 {}
+#wrap main #main_about_sealy .abt_wrap {}
+#wrap main #main_about_sealy .abt_wrap .abt_container {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 span {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big p {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img img {}
+#wrap main #main_about_sealy .abt_wrap .title_small {}
+#wrap main #main_about_sealy .abt_wrap .title_small .active {}
+#wrap main #main_about_sealy .abt_wrap .title_small .active a {}
+#wrap main #main_about_sealy .abt_wrap .title_small .active a h2 {}
+#wrap main #main_about_sealy .abt_wrap .title_small .active a img {}
+#wrap main #main_about_sealy .abt_wrap .title_small li {}
+#wrap main #main_about_sealy .abt_wrap .title_small li a {}
+#wrap main #main_about_sealy .abt_wrap .title_small li a h2 {}
+#wrap main #main_about_sealy .abt_wrap .title_small li a img {}
+#wrap main #main_collection {}
+#wrap main #main_collection .title_number_box {}
+#wrap main #main_collection .title_number_box .title_number {}
+#wrap main #main_collection .title_number_box h1 {}
+#wrap main #main_collection .collection_box {}
+#wrap main #main_collection .collection_box li {}
+#wrap main #main_collection .collection_box li .collection {}
+#wrap main #main_collection .collection_box li .collection_popup {}
+#wrap main #main_collection .collection_box li .collection_popup img {}
+#wrap main #main_collection .collection_box li .collection_popup a {}
+#wrap main #main_collection .collection_box li .collection_popup a img {}
+#wrap main #main_event {}
+#wrap main #main_event .event_bnr {}
+#wrap main #main_event .event_bnr p {}
+#wrap main #main_event .event_bnr h1 {}
+#wrap main #main_event .event_bnr a {}
+#wrap main #main_event .event_bnr a img {}
+#wrap main #main_event .event1 {}
+#wrap main #main_event .event2 {}
+#wrap main #main_shop {}
+#wrap main #main_shop .title_number_box {}
+#wrap main #main_shop .title_number_box p {}
+#wrap main #main_shop .title_number_box h1 {}
+#wrap main #main_shop .products_title {}
+#wrap main #main_shop .products_title h2 {}
+#wrap main #main_shop .products_title h2 span {}
+#wrap main #main_shop .products_title a {}
+#wrap main #main_shop .products_title a img {}
+#wrap main #main_shop .products_box {}
+#wrap main #main_shop .products_box .product {}
+#wrap main #main_shop .products_box .product .product_img {}
+#wrap main #main_shop .products_box .product .product_img a {}
+#wrap main #main_shop .products_box .product .product_img a img {}
+#wrap main #main_shop .products_box .product .product_img .wish_btn {}
+#wrap main #main_shop .products_box .product .product_img .wish_btn img {}
+#wrap main #main_shop .products_box .product h3 {}
+#wrap main #main_shop .products_box .product h3 a {}
+#wrap main #main_shop .products_box .product .product_size {}
+#wrap main #main_shop .products_box .product .product_cushion {}
+#wrap main #main_shop .products_box .product .price_info {}
+#wrap main #main_shop .products_box .product .price_info span {}
+#wrap main #main_shop .products_box .product .price_info em {}
+#wrap main #main_shop .products_box .product a {}
+#wrap main #main_community {}
+#wrap main #main_community .title_number_box {}
+#wrap main #main_community .title_number_box .title_number {}
+#wrap main #main_community .title_number_box h1 {}
+#wrap main #main_community .community_box {}
+#wrap main #main_community .community_box h2 {}
+#wrap main #main_community .community_box h2 span {}
+#wrap main #main_community .community_box .community_list {}
+#wrap main #main_community .community_box .community_list li {}
+#wrap main #main_community .community_box .community_list li a {}
+#wrap main #main_community .community_box .community_list li a img {}
+#wrap main #main_community .community_box .community_list li a h3 {}
+#wrap main #main_community .community_box .community_list li a p {}
+#wrap main #main_support {}
+#wrap main #main_support h1 {}
+#wrap main #main_support .support_list {}
+#wrap main #main_support .support_list li {}
+#wrap main #main_support .support_list li a {}
+#wrap main #main_support .support_list li a img {}
+#wrap main #main_support .support_list li a h2 {}
+#wrap main #main_support .support_list li a p {}
+/* -----------------------------------------------footer */
+#wrap footer {}
+#wrap footer .footer_logo {}
+#wrap footer .footer_logo img {}
+#wrap footer .footer_info {}
+#wrap footer .footer_info .company_name {}
+#wrap footer .footer_info .company_info {}
+#wrap footer .footer_info .company_info dt {}
+#wrap footer .footer_info .company_info dd {}
+#wrap footer .footer_info .company_info dd address {}
+#wrap footer .footer_info .company_info .biz_info {}
+#wrap footer .footer_info .company_info .biz_info .biz_link {}
+#wrap footer .footer_info .fnb {}
+#wrap footer .footer_info .fnb li {}
+#wrap footer .footer_info .fnb li a {}
+#wrap footer .footer_info .copyright {}
+#wrap footer .service {}
+#wrap footer .service .service_center {}
+#wrap footer .service .service_center dt {}
+#wrap footer .service .service_center dd {}
+#wrap footer .service .sns {}
+#wrap footer .service .sns a {}
+#wrap footer .service .sns a img {}
