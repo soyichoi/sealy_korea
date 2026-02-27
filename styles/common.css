@@ -1,0 +1,101 @@
+/* 공통디자인 common.css */
+/* header, footer  */
+/* ========================================================header */
+#wrap header {
+    height: 86px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed; left: 0; top: 0; width: 100%; z-index: 999;
+}
+#wrap header #gnb_left {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+#wrap header #gnb_left h1 {margin-right: 70px;}
+#wrap header #gnb_left h1 a {}
+#wrap header #gnb_left h1 a img {width: 100%;}
+#wrap header #gnb_left nav {}
+#wrap header #gnb_left nav #gnb {
+    display: flex; flex-flow: row nowrap;
+    gap: 60px;
+}
+#wrap header #gnb_left nav #gnb li {}
+#wrap header #gnb_left nav #gnb li a {
+    color: #fff; font-size: 1.1rem;
+}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 {
+    display: none;
+}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li {}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li a {}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li .depth_title {}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li .lnb_depth3 {display: none;}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li .lnb_depth3 li {}
+#wrap header #gnb_left nav #gnb li .lnb_depth2 li .lnb_depth3 li a {}
+#wrap header .lnb_right {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    gap: 10px;
+}
+#wrap header .lnb_right li {position: relative; gap: 10px;}
+#wrap header .lnb_right li a {}
+#wrap header .lnb_right li a img {width: 100%;}
+#wrap header .lnb_right li span {
+    background-color: #7aadd3;
+    color: #fff; font-size: 0.6rem; text-align: center; line-height: 1.5;
+    border-radius: 50%; width: 15px; height: 15px; display: block;
+    position: absolute; right: 5px; top: 12px;
+}
+#wrap header .search_popup {display: none;}
+#wrap header .search_popup .search_form {}
+#wrap header .search_popup .search_form #search_keyword {}
+#wrap header .search_popup .search_form .search_btn {}
+#wrap header .search_popup .search_form .search_btn img {}
+#wrap header .search_popup .popular_keywords {}
+#wrap header .search_popup .popular_keywords .search_title {}
+#wrap header .search_popup .popular_keywords ul {}
+#wrap header .search_popup .popular_keywords ul li {}
+#wrap header .search_popup .popular_keywords ul li a {}
+#wrap header .search_popup .reco_section {}
+#wrap header .search_popup .reco_section h2 {}
+#wrap header .search_popup .reco_section .reco_list {}
+#wrap header .search_popup .reco_section .reco_list .reco_item {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a img {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn img {}
+#wrap header .search_popup .reco_section .reco_list .reco_item h2 {}
+#wrap header .search_popup .reco_section .reco_list .reco_item h2 a {}
+#wrap header .search_popup .reco_section .reco_list .reco_item p {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_size {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_cusion {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_badge {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box span {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box em {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .review {}
+#wrap header .search_popup .search_popup_close {}
+#wrap header .search_popup .search_popup_close img {}
+/* ========================================================footer */
+#wrap footer {}
+#wrap footer .footer_logo {}
+#wrap footer .footer_logo img {}
+#wrap footer .footer_info {}
+#wrap footer .footer_info .company_name {}
+#wrap footer .footer_info .company_info {}
+#wrap footer .footer_info .company_info dt {}
+#wrap footer .footer_info .company_info dd {}
+#wrap footer .footer_info .company_info dd address {}
+#wrap footer .footer_info .company_info .biz_info {}
+#wrap footer .footer_info .company_info .biz_info .biz_link {}
+#wrap footer .footer_info .fnb {}
+#wrap footer .footer_info .fnb li {}
+#wrap footer .footer_info .fnb li a {}
+#wrap footer .footer_info .copyright {}
+#wrap footer .service {}
+#wrap footer .service .service_center {}
+#wrap footer .service .service_center dt {}
+#wrap footer .service .service_center dd {}
+#wrap footer .service .sns {}
+#wrap footer .service .sns a {}
+#wrap footer .service .sns a img {}

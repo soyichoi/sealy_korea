@@ -15,3 +15,5 @@
 * index.html 완료
 ### 26/02/22 update
 * index.css 선택자 작성
+### 26/02/27 update
+* css 작업 시작

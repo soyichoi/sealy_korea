@@ -1,90 +1,82 @@
 body {}
 #wrap {}
-/* -----------------------------------------------header */
-#wrap header {}
-#wrap header h1 {}
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav #gnb {}
-#wrap header nav #gnb li {}
-#wrap header nav #gnb li a {}
-#wrap header nav #gnb li .lnb_depth2 {}
-#wrap header nav #gnb li .lnb_depth2 li {}
-#wrap header nav #gnb li .lnb_depth2 li a {}
-#wrap header nav #gnb li .lnb_depth2 li .depth_title {}
-#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 {}
-#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 li {}
-#wrap header nav #gnb li .lnb_depth2 li .lnb_depth3 li a {}
-#wrap header .lnb_right {}
-#wrap header .lnb_right li {}
-#wrap header .lnb_right li a {}
-#wrap header .lnb_right li a img {}
-#wrap header .lnb_right li span {}
-#wrap header .search_popup {}
-#wrap header .search_popup .search_form {}
-#wrap header .search_popup .search_form #search_keyword {}
-#wrap header .search_popup .search_form .search_btn {}
-#wrap header .search_popup .search_form .search_btn img {}
-#wrap header .search_popup .popular_keywords {}
-#wrap header .search_popup .popular_keywords .search_title {}
-#wrap header .search_popup .popular_keywords ul {}
-#wrap header .search_popup .popular_keywords ul li {}
-#wrap header .search_popup .popular_keywords ul li a {}
-#wrap header .search_popup .reco_section {}
-#wrap header .search_popup .reco_section h2 {}
-#wrap header .search_popup .reco_section .reco_list {}
-#wrap header .search_popup .reco_section .reco_list .reco_item {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail a img {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn img {}
-#wrap header .search_popup .reco_section .reco_list .reco_item h2 {}
-#wrap header .search_popup .reco_section .reco_list .reco_item h2 a {}
-#wrap header .search_popup .reco_section .reco_list .reco_item p {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_size {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_cusion {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_badge {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box span {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box em {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .review {}
-#wrap header .search_popup .search_popup_close {}
-#wrap header .search_popup .search_popup_close img {}
-/* -----------------------------------------------main */
+/* ========================================================main */
 #wrap main {}
-#wrap main #right_quick {}
+#wrap main #right_quick {
+    background-color: black;
+    width: 60px;
+    position: fixed; right: 50px; bottom: 60px; z-index: 999;
+}
 #wrap main #right_quick .btn_map {}
-#wrap main #right_quick .btn_map img {}
+#wrap main #right_quick .btn_map img {width: 100%; margin-bottom: 10px;}
 #wrap main #right_quick .btn_kakao {}
-#wrap main #right_quick .btn_kakao img {}
+#wrap main #right_quick .btn_kakao img {width: 100%; margin-bottom: 10px;}
 #wrap main #right_quick .btn_to_go {}
-#wrap main #right_quick .btn_to_go img {}
+#wrap main #right_quick .btn_to_go img {width: 100%;}
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .slide_wrap {}
-#wrap main #hero_bnr .slide_wrap .slide_container {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide p {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide h1 {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide1 {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide2 {}
-#wrap main #hero_bnr .slide_wrap .slide_container .slide3 {}
+#wrap main #hero_bnr .slide_wrap {
+    width: 1920px; height: 845px;
+    overflow: hidden;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container {
+    width: 5760px; height: 845px;
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide {
+    width: 100%; height: 100%; position: relative;
+    background-size: cover;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide p {
+    color: #fff;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide h1 {
+    color: #fff;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide1 {
+    background-image: url(../images/banner1.jpg);
+    
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide h1 {
+    font-size: 3rem; font-weight: 600;
+    position: absolute; left: 280px; top: 40%;
+    line-height: 1.3;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide p {
+    position: absolute; left: 280px; top: 36%;
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide2 {
+    background-image: url(../images/banner2.jpg);
+}
+#wrap main #hero_bnr .slide_wrap .slide_container .slide3 {
+    background-image: url(../images/banner3.jpg);
+}
 #wrap main #hero_bnr .slide_wrap .prev {}
-#wrap main #hero_bnr .slide_wrap .prev img {}
+#wrap main #hero_bnr .slide_wrap .prev img {
+    position: absolute; left: 150px; top: 50%;
+}
 #wrap main #hero_bnr .slide_wrap .next {}
-#wrap main #hero_bnr .slide_wrap .next img {}
+#wrap main #hero_bnr .slide_wrap .next img {
+    position: absolute; right: 150px; top: 50%;
+}
 #wrap main #hero_bnr .slide_wrap .hero_controls {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress .hero_progress_bar {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev img {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress .hero_progress_bar {
+    
+}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination {
+    position: absolute; z-index: 999; left: 280px; bottom: 220px;
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev_s {margin-right: 10px;}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev_s img { width: 20%;}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number span {
+    color: #fff;
+}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number .current {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number .total {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next img {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next_s {margin-left: 10px;}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next_s img {width: 20%;}
 #wrap main #main_video {}
 #wrap main #main_video h1 {}
 #wrap main #main_video iframe {}
@@ -176,26 +168,3 @@ body {}
 #wrap main #main_support .support_list li a img {}
 #wrap main #main_support .support_list li a h2 {}
 #wrap main #main_support .support_list li a p {}
-/* -----------------------------------------------footer */
-#wrap footer {}
-#wrap footer .footer_logo {}
-#wrap footer .footer_logo img {}
-#wrap footer .footer_info {}
-#wrap footer .footer_info .company_name {}
-#wrap footer .footer_info .company_info {}
-#wrap footer .footer_info .company_info dt {}
-#wrap footer .footer_info .company_info dd {}
-#wrap footer .footer_info .company_info dd address {}
-#wrap footer .footer_info .company_info .biz_info {}
-#wrap footer .footer_info .company_info .biz_info .biz_link {}
-#wrap footer .footer_info .fnb {}
-#wrap footer .footer_info .fnb li {}
-#wrap footer .footer_info .fnb li a {}
-#wrap footer .footer_info .copyright {}
-#wrap footer .service {}
-#wrap footer .service .service_center {}
-#wrap footer .service .service_center dt {}
-#wrap footer .service .service_center dd {}
-#wrap footer .service .sns {}
-#wrap footer .service .sns a {}
-#wrap footer .service .sns a img {}
