@@ -34,7 +34,6 @@ body {}
 }
 #wrap main #hero_bnr .slide_wrap .slide_container .slide1 {
     background-image: url(../images/banner1.jpg);
-    
 }
 #wrap main #hero_bnr .slide_wrap .slide_container .slide h1 {
     font-size: 3rem; font-weight: 600;
@@ -59,9 +58,13 @@ body {}
     position: absolute; right: 150px; top: 50%;
 }
 #wrap main #hero_bnr .slide_wrap .hero_controls {}
-#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {}
+#wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {
+    width: 450px; height: 1.6px; background-color: rgba(255,255,255,0.3);
+    position: absolute; z-index: 999; left: 280px; bottom: 270px;
+    display: flex; flex-flow: row nowrap;
+}
 #wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress .hero_progress_bar {
-    
+    width: 33%; background-color: rgba(255,255,255,0.5);
 }
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination {
     position: absolute; z-index: 999; left: 280px; bottom: 220px;

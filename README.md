@@ -17,3 +17,6 @@
 * index.css 선택자 작성
 ### 26/02/27 update
 * css 작업 시작
+### 26/03/04 update
+* header, hero bnr 작업 완료
+* search popup 작업중
