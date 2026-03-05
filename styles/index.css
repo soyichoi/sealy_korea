@@ -1,6 +1,6 @@
 body {}
 #wrap {}
-/* ========================================================main */
+/* ================================================================main */
 #wrap main {}
 #wrap main #right_quick {
     background-color: black;
@@ -13,6 +13,7 @@ body {}
 #wrap main #right_quick .btn_kakao img {width: 100%; margin-bottom: 10px;}
 #wrap main #right_quick .btn_to_go {}
 #wrap main #right_quick .btn_to_go img {width: 100%;}
+/* -----------------------------------------------------------1. hero_bnr */
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .slide_wrap {
     width: 1920px; height: 845px;
@@ -60,18 +61,18 @@ body {}
 #wrap main #hero_bnr .slide_wrap .hero_controls {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {
     width: 450px; height: 1.6px; background-color: rgba(255,255,255,0.3);
-    position: absolute; z-index: 999; left: 280px; bottom: 270px;
+    position: absolute; z-index: 888; left: 280px; bottom: 270px;
     display: flex; flex-flow: row nowrap;
 }
 #wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress .hero_progress_bar {
     width: 33%; background-color: rgba(255,255,255,0.5);
 }
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination {
-    position: absolute; z-index: 999; left: 280px; bottom: 220px;
+    position: absolute; z-index: 888; left: 280px; bottom: 220px;
     display: flex; flex-flow: row nowrap;
 }
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev_s {margin-right: 10px;}
-#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev_s img { width: 20%;}
+#wrap main #hero_bnr .slide_wrap .hero_controls .pagination .prev_s img {width: 20%;}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number span {
     color: #fff;
@@ -80,12 +81,32 @@ body {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .page_number .total {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next_s {margin-left: 10px;}
 #wrap main #hero_bnr .slide_wrap .hero_controls .pagination .next_s img {width: 20%;}
-#wrap main #main_video {}
-#wrap main #main_video h1 {}
-#wrap main #main_video iframe {}
-#wrap main #main_video .video_desc_box {}
-#wrap main #main_video .video_desc_box p {}
-#wrap main #main_about_sealy {}
+/* -----------------------------------------------------------2. main_video */
+#wrap main #main_video {
+    padding: 150px 0 250px 0; text-align: center;
+    background-image: url(../images/main_video_bg.jpg);
+    background-color: #fcfcfc; background-position: bottom;
+    background-repeat: no-repeat;
+}
+#wrap main #main_video h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 4rem; font-weight: 200;
+}
+#wrap main #main_video h1 span {
+    font-weight: 500;
+}
+#wrap main #main_video iframe {
+    margin-top: 100px;
+}
+#wrap main #main_video .video_desc_box {margin: 200px 0 0 0;}
+#wrap main #main_video .video_desc_box p {
+    font-size: 2.2rem; font-weight: 600; line-height: 1.7;
+}
+/* -----------------------------------------------------------3. main_about_sealy */
+#wrap main #main_about_sealy {
+    background-color: rgba(122,173,211,0.1);
+    padding: 100px 150px;
+}
 #wrap main #main_about_sealy .title_number_box {}
 #wrap main #main_about_sealy .title_number_box .title_number {}
 #wrap main #main_about_sealy .title_number_box h1 {}

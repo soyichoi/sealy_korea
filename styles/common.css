@@ -1,6 +1,6 @@
 /* 공통디자인 common.css */
 /* header, footer  */
-/* ========================================================header */
+/* ================================================================header */
 #wrap header {
     height: 86px;
     display: flex; flex-flow: row nowrap;
@@ -8,6 +8,7 @@
     padding: 0 50px;
     position: fixed; left: 0; top: 0; width: 100%; z-index: 999;
 }
+/* -----------------------------------------------------------gnb_left */
 #wrap header #gnb_left {
     display: flex; flex-flow: row nowrap; align-items: center;
 }
@@ -46,6 +47,7 @@
 #wrap header #gnb_left nav #gnb li .lnb_depth2 > li .lnb_depth3 > li > a:hover {
     font-weight: 600;
 }
+/* -----------------------------------------------------------lnb_right */
 #wrap header .lnb_right {
     display: flex; flex-flow: row nowrap; align-items: center;
     gap: 10px;
@@ -59,30 +61,29 @@
     border-radius: 50%; width: 15px; height: 15px; display: block;
     position: absolute; right: 5px; top: 12px;
 }
+/* -----------------------------------------------------------search_popup */
 #wrap header .search_popup {
     background-color: #fff;
     padding: 50px 0;
     position: absolute; left: 0; top: 86px; z-index: 999; width: 100%;
     display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+    display: none;
 }
 #wrap header .search_popup .search_form {
-    border-bottom: 1px solid #7aadd3;
-    width: 784px;
+    border-bottom: 1px solid #7aadd3; width: 778px;
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
 }
 #wrap header .search_popup .search_form #search_keyword {
-    background-color: antiquewhite;
-    width: 750px; height: 50px;
-    font-size: 1.5rem;
+    width: 750px; height: 50px; font-size: 1.5rem;
 }
 #wrap header .search_popup .search_form .search_btn {}
-#wrap header .search_popup .search_form .search_btn img {}
+#wrap header .search_popup .search_form .search_btn img {width: 100%;}
 #wrap header .search_popup .popular_keywords {
     display: flex; flex-flow: row nowrap; align-items: center;
     margin-top: 26px;
 }
 #wrap header .search_popup .popular_keywords .search_title {
-    color: #7aadd3; font-weight: 700; margin-right: 12px;
+    color: #7aadd3; font-weight: 700; margin-right: 20px;
 }
 #wrap header .search_popup .popular_keywords ul {
     display: flex; flex-flow: row nowrap; gap: 8px;
@@ -90,7 +91,7 @@
 #wrap header .search_popup .popular_keywords ul li {}
 #wrap header .search_popup .popular_keywords ul li a {
     padding: 15px 30px; display: inline-block;
-    color: #4d4d4d; font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.4); font-size: 0.88rem;
     border: 1px solid #bbb;
 }
 #wrap header .search_popup .reco_section {}
@@ -99,11 +100,10 @@
 }
 #wrap header .search_popup .reco_section .reco_list {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    width: 1143px; background-color: aqua;
+    width: 1143px;
 }
 #wrap header .search_popup .reco_section .reco_list .reco_item {
-    width: calc((100% - 68px) / 5);
-    font-size: 0.86rem;
+    width: calc((100% - 68px) / 5); font-size: 0.86rem;
 }
 #wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail {
     position: relative; margin-bottom: 10px;
@@ -113,22 +113,32 @@
 #wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn {
     position: absolute; right: 10px; top: 10px;
 }
-#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn img {width: 100%;}
-#wrap header .search_popup .reco_section .reco_list .reco_item h2 {margin-bottom: 10px;}
+#wrap header .search_popup .reco_section .reco_list .reco_item .reco_thumnail .wish_btn img {width: 22px;}
+#wrap header .search_popup .reco_section .reco_list .reco_item h2 {}
 #wrap header .search_popup .reco_section .reco_list .reco_item h2 a {}
 #wrap header .search_popup .reco_section .reco_list .reco_item p {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_size,
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_cushion {
-    color: #ddd; margin-bottom: 10px;}
-#wrap header .search_popup .reco_section .reco_list .reco_item .item_badge {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box span {}
-#wrap header .search_popup .reco_section .reco_list .reco_item .price_box em {
-    color: #7aadd3; font-weight: 600;
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_size {
+    color: #ccc; margin: 12px 0 10px 0;
 }
-#wrap header .search_popup .reco_section .reco_list .reco_item .review {}
-#wrap header .search_popup .search_popup_close {}
-#wrap header .search_popup .search_popup_close img {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_cushion {
+    color: #ccc; margin-bottom: 20px}
+#wrap header .search_popup .reco_section .reco_list .reco_item .item_badge {
+    font-weight: 500;
+}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box {}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box span {
+    font-weight: 500;
+}
+#wrap header .search_popup .reco_section .reco_list .reco_item .price_box em {
+    color: #7aadd3; font-weight: 600; margin-left: 7px;
+}
+#wrap header .search_popup .reco_section .reco_list .reco_item .review {
+    font-size: 1rem; display: block; margin-top: 14px;
+}
+#wrap header .search_popup .search_popup_close {
+    position: absolute; right: 360px; top: 60px; z-index: 999;
+}
+#wrap header .search_popup .search_popup_close img {width: 40px;}
 /* ========================================================footer */
 #wrap footer {}
 #wrap footer .footer_logo {}
@@ -152,3 +162,17 @@
 #wrap footer .service .sns {}
 #wrap footer .service .sns a {}
 #wrap footer .service .sns a img {}
+/* ================================================================공통 title_number */
+#wrap .title_number_box {
+    display: flex; flex-flow: row nowrap; align-items: center; gap: 10px;
+}
+#wrap .title_number_box .title_number {
+    font-family: 'TimesNewerRoman', sans-serif; font-style: italic;  font-size: 1.2rem;
+}
+#wrap .title_number_box .bar {
+    width: 70px; height: 1px; background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+}
+#wrap .title_number_box > h1 {
+    font-family: 'Instrument Sans', sans-serif; font-size: 1.2rem;
+}

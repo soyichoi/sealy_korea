@@ -20,3 +20,6 @@
 ### 26/03/04 update
 * header, hero bnr 작업 완료
 * search popup 작업중
+### 26/03/05 update
+* search popup ~ main video 작업 완료
+* about sealy 작업중
