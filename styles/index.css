@@ -50,14 +50,10 @@ body {}
 #wrap main #hero_bnr .slide_wrap .slide_container .slide3 {
     background-image: url(../images/banner3.jpg);
 }
-#wrap main #hero_bnr .slide_wrap .prev {}
-#wrap main #hero_bnr .slide_wrap .prev img {
-    position: absolute; left: 150px; top: 50%;
-}
-#wrap main #hero_bnr .slide_wrap .next {}
-#wrap main #hero_bnr .slide_wrap .next img {
-    position: absolute; right: 150px; top: 50%;
-}
+#wrap main #hero_bnr .slide_wrap .prev {position: absolute; left: 150px; top: 50%;}
+#wrap main #hero_bnr .slide_wrap .prev img {}
+#wrap main #hero_bnr .slide_wrap .next {position: absolute; right: 150px; top: 50%;}
+#wrap main #hero_bnr .slide_wrap .next img {}
 #wrap main #hero_bnr .slide_wrap .hero_controls {}
 #wrap main #hero_bnr .slide_wrap .hero_controls .hero_progress {
     width: 450px; height: 1.6px; background-color: rgba(255,255,255,0.3);
@@ -110,24 +106,61 @@ body {}
 #wrap main #main_about_sealy .title_number_box {}
 #wrap main #main_about_sealy .title_number_box .title_number {}
 #wrap main #main_about_sealy .title_number_box h1 {}
-#wrap main #main_about_sealy .abt_wrap {}
+#wrap main #main_about_sealy .abt_wrap {position: relative;}
 #wrap main #main_about_sealy .abt_wrap .abt_container {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt:nth-child(2),
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt:nth-child(3),
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt:nth-child(4) {display:none;}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
 #wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 span {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big p {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img {}
-#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img img {}
-#wrap main #main_about_sealy .abt_wrap .title_small {}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 {
+    font-size: 5.5rem; margin-top: 70px;
+}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big h2 span {
+    display: block; margin-top: 20px;
+    font-family: 'Times Newer Roman', sans-serif; font-style: italic;
+}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .title_big p {
+    line-height: 1.6; margin-top: 20px;
+}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img {width: 800px;}
+#wrap main #main_about_sealy .abt_wrap .abt_container .abt_cnt .about_img img {width: 100%;}
+#wrap main #main_about_sealy .abt_wrap .title_small {
+    position: absolute; width: 460px;
+    bottom: 20px; left: 200px; display: block;
+}
 #wrap main #main_about_sealy .abt_wrap .title_small .active {}
 #wrap main #main_about_sealy .abt_wrap .title_small .active a {}
 #wrap main #main_about_sealy .abt_wrap .title_small .active a h2 {}
 #wrap main #main_about_sealy .abt_wrap .title_small .active a img {}
 #wrap main #main_about_sealy .abt_wrap .title_small li {}
-#wrap main #main_about_sealy .abt_wrap .title_small li a {}
-#wrap main #main_about_sealy .abt_wrap .title_small li a h2 {}
-#wrap main #main_about_sealy .abt_wrap .title_small li a img {}
+#wrap main #main_about_sealy .abt_wrap .title_small li a {
+    padding: 16px 0;
+    border-bottom: 1px solid #7aadd3;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap main #main_about_sealy .abt_wrap .title_small li a::after{
+    content: ''; display: inline-block; width: 15px; height: 15px;
+    background-image: url(../images/btn_more.svg);
+    opacity: 0; transition: 0.8s;
+}
+#wrap main #main_about_sealy .abt_wrap .title_small li a h2 {
+    color: #7aadd3; font-family: 'InstrumentSans', sans-serif; font-size: 1.13rem;
+    display: inline-block;
+}
+#wrap main #main_about_sealy .abt_wrap .title_small li a:hover {
+    border-bottom: 1px solid #000;
+}
+#wrap main #main_about_sealy .abt_wrap .title_small li a:hover h2{
+    color: #000; font-weight: 600;
+    opacity: 1;
+}
+#wrap main #main_about_sealy .abt_wrap .title_small li a:hover::after {
+    opacity: 1;
+}
 #wrap main #main_collection {}
 #wrap main #main_collection .title_number_box {}
 #wrap main #main_collection .title_number_box .title_number {}

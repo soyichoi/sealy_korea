@@ -23,3 +23,6 @@
 ### 26/03/05 update
 * search popup ~ main video 작업 완료
 * about sealy 작업중
+### 26/03/05 update
+* 전체 내용 피드백 후 수정중
+* about sealy 작업완료

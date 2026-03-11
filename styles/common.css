@@ -11,8 +11,9 @@
 /* -----------------------------------------------------------gnb_left */
 #wrap header #gnb_left {
     display: flex; flex-flow: row nowrap; align-items: center;
+    gap: 70px;
 }
-#wrap header #gnb_left h1 {margin-right: 70px;}
+#wrap header #gnb_left h1 {}
 #wrap header #gnb_left h1 a {}
 #wrap header #gnb_left h1 a img {width: 100%;}
 #wrap header #gnb_left nav {}
@@ -52,7 +53,7 @@
     display: flex; flex-flow: row nowrap; align-items: center;
     gap: 10px;
 }
-#wrap header .lnb_right li {position: relative; gap: 10px;}
+#wrap header .lnb_right li {position: relative;}
 #wrap header .lnb_right li a {}
 #wrap header .lnb_right li a img {width: 100%;}
 #wrap header .lnb_right li span {
@@ -70,11 +71,12 @@
     display: none;
 }
 #wrap header .search_popup .search_form {
-    border-bottom: 1px solid #7aadd3; width: 778px;
+    border-bottom: 1px solid #7aadd3;
+    width: 780px;
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
 }
 #wrap header .search_popup .search_form #search_keyword {
-    width: 750px; height: 50px; font-size: 1.5rem;
+    width: calc(100% - 61px); height: 50px; font-size: 1.5rem;
 }
 #wrap header .search_popup .search_form .search_btn {}
 #wrap header .search_popup .search_form .search_btn img {width: 100%;}
@@ -167,7 +169,7 @@
     display: flex; flex-flow: row nowrap; align-items: center; gap: 10px;
 }
 #wrap .title_number_box .title_number {
-    font-family: 'TimesNewerRoman', sans-serif; font-style: italic;  font-size: 1.2rem;
+    font-family: 'Times Newer Roman', sans-serif; font-style: italic;  font-size: 1.2rem;
 }
 #wrap .title_number_box .bar {
     width: 70px; height: 1px; background-color: rgba(0,0,0,0.2);
